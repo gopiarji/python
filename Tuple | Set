@@ -1,0 +1,92 @@
+Here’s a brief explanation of **Tuple** and **Set** in Python with examples:
+
+---
+
+### ✅ **1. Tuple**
+
+* **Ordered** and **immutable** collection (cannot be changed after creation).
+* Allows **duplicates**.
+
+#### ▶️ Example:
+
+```python
+# Create a tuple
+my_tuple = (1, 2, 3, "apple", True)
+
+# Access items by index
+print(my_tuple[0])  # Output: 1
+
+# Tuples are immutable (cannot modify)
+# my_tuple[1] = 5  # ❌ This will raise an error
+
+# Length of tuple
+print(len(my_tuple))  # Output: 5
+```
+
+#### ✅ When to use?
+
+* When the collection of items should **not change** (e.g., coordinates: `(x, y)`)
+* Slightly faster than lists
+
+---
+
+### ✅ **2. Set**
+
+* **Unordered** collection of **unique items** (no duplicates).
+* Mutable: You can add or remove items.
+* Items are not accessible by index.
+
+#### ▶️ Example:
+
+```python
+# Create a set
+my_set = {1, 2, 3, "apple"}
+
+# Add an item
+my_set.add("banana")
+
+# Remove an item
+my_set.remove(2)
+
+# Duplicates are automatically removed
+my_set = {1, 1, 2, 3, 3}
+print(my_set)  # Output: {1, 2, 3}
+
+# Loop through set (order is not guaranteed)
+for item in my_set:
+    print(item)
+```
+
+#### ✅ Common Set Operations:
+
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+# Union
+print(set1 | set2)  # {1, 2, 3, 4, 5}
+
+# Intersection
+print(set1 & set2)  # {3}
+
+# Difference
+print(set1 - set2)  # {1, 2}
+```
+
+---
+
+### ✅ Summary
+
+| Feature      | Tuple       | Set                     |
+| ------------ | ----------- | ----------------------- |
+| Mutable      | ❌ Immutable | ✅ Mutable               |
+| Ordered      | ✅ Ordered   | ❌ Unordered             |
+| Duplicates   | ✅ Allowed   | ❌ Automatically removed |
+| Index Access | ✅ Yes       | ❌ No index-based access |
+
+---
+
+👉 Tuples: For fixed collections
+👉 Sets: For unique items, removing duplicates, and fast membership checks
+
+Let me know if you want me to explain nested tuples or advanced set methods.
