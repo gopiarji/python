@@ -1,0 +1,126 @@
+Here is a thorough explanation of **Number System Conversion in Python**, including how to work with binary, decimal, octal, and hexadecimal systems.
+
+---
+
+## ✅ 1️⃣ Number Systems Overview
+
+| System      | Base | Prefix      | Example Representation |
+| ----------- | ---- | ----------- | ---------------------- |
+| Binary      | 2    | `0b`        | `0b0011` → 3 (decimal) |
+| Octal       | 8    | `0o`        | `0o11` → 9 (decimal)   |
+| Decimal     | 10   | (no prefix) | `11` → 11 (decimal)    |
+| Hexadecimal | 16   | `0x`        | `0xA` → 10 (decimal)   |
+
+---
+
+## ✅ 2️⃣ Convert Decimal → Binary / Octal / Hexadecimal
+
+Use built-in functions:
+
+```python
+x = 10
+
+binary = bin(x)    # '0b1010'
+octal = oct(x)     # '0o12'
+hexa = hex(x)      # '0xa'
+
+print(binary)  # Output: 0b1010
+print(octal)   # Output: 0o12
+print(hexa)    # Output: 0xa
+```
+
+---
+
+## ✅ 3️⃣ Convert Binary / Octal / Hexadecimal → Decimal
+
+Use `int()` with base argument:
+
+```python
+binary_num = "0b1010"
+decimal_from_bin = int(binary_num, 2)  # 10
+
+octal_num = "0o12"
+decimal_from_oct = int(octal_num, 8)  # 10
+
+hex_num = "0xA"
+decimal_from_hex = int(hex_num, 16)   # 10
+
+print(decimal_from_bin)  # 10
+print(decimal_from_oct)  # 10
+print(decimal_from_hex)  # 10
+```
+
+👉 Without prefix:
+
+```python
+int('1010', 2)  # 10
+int('12', 8)    # 10
+int('A', 16)    # 10
+```
+
+---
+
+## ✅ 4️⃣ Example: Display Number Systems
+
+```python
+num = 25
+
+print("Decimal: ", num)                     # 25
+print("Binary: ", bin(num))                # 0b11001
+print("Octal: ", oct(num))                 # 0o31
+print("Hexadecimal: ", hex(num))           # 0x19
+```
+
+---
+
+## ✅ 5️⃣ Example: Input Binary and Convert to Decimal
+
+```python
+binary_input = input("Enter binary number (e.g., 1010): ")
+decimal_value = int(binary_input, 2)
+print(f"Decimal value is: {decimal_value}")
+```
+
+---
+
+## ✅ 6️⃣ Negative Numbers in Binary
+
+```python
+x = -5
+print(bin(x))  # Output: '-0b101'
+```
+
+⚡ Note: Python uses sign notation, not two’s complement in its representation.
+
+---
+
+## ✅ 7️⃣ Summary Table of Useful Functions
+
+| Purpose               | Function         | Example  |
+| --------------------- | ---------------- | -------- |
+| Decimal → Binary      | `bin(10)`        | '0b1010' |
+| Decimal → Octal       | `oct(10)`        | '0o12'   |
+| Decimal → Hexadecimal | `hex(10)`        | '0xa'    |
+| Binary → Decimal      | `int('1010', 2)` | 10       |
+| Octal → Decimal       | `int('12', 8)`   | 10       |
+| Hexadecimal → Decimal | `int('a', 16)`   | 10       |
+
+---
+
+## ✅ Example Putting It All Together
+
+```python
+num = 47
+
+print(f"Decimal: {num}")
+print(f"Binary: {bin(num)}")
+print(f"Octal: {oct(num)}")
+print(f"Hexadecimal: {hex(num)}")
+
+binary_str = '101111'
+print(f"Binary '{binary_str}' to Decimal: {int(binary_str, 2)}")
+```
+
+---
+
+Would you like me to prepare practice problems where you convert between different number systems manually and via Python code?
