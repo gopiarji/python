@@ -1,0 +1,96 @@
+Here is a clear and detailed explanation of how to **Import and Use Math Functions in Python**.
+
+---
+
+## ✅ 1️⃣ What Is the `math` Module?
+
+The `math` module provides a collection of mathematical functions and constants (like π and e), useful for advanced calculations.
+
+---
+
+## ✅ 2️⃣ How to Import the Math Module
+
+👉 **Standard import:**
+
+```python
+import math
+```
+
+👉 **Import with alias:**
+
+```python
+import math as m
+```
+
+👉 **Import specific functions:**
+
+```python
+from math import sqrt, pi
+```
+
+---
+
+## ✅ 3️⃣ Commonly Used Math Functions
+
+| Function            | Description                         | Example                         |
+| ------------------- | ----------------------------------- | ------------------------------- |
+| `math.sqrt(x)`      | Square root of `x`                  | `math.sqrt(16)` → `4.0`         |
+| `math.factorial(x)` | Factorial of `x` (x!)               | `math.factorial(5)` → `120`     |
+| `math.pow(x, y)`    | x raised to the power y             | `math.pow(2, 3)` → `8.0`        |
+| `math.ceil(x)`      | Round up to nearest integer         | `math.ceil(4.1)` → `5`          |
+| `math.floor(x)`     | Round down to nearest integer       | `math.floor(4.9)` → `4`         |
+| `math.log(x)`       | Natural logarithm (base e)          | `math.log(math.e)` → `1.0`      |
+| `math.log10(x)`     | Logarithm base 10                   | `math.log10(100)` → `2.0`       |
+| `math.sin(x)`       | Sine of x (in radians)              | `math.sin(math.pi / 2)` → `1.0` |
+| `math.cos(x)`       | Cosine of x (in radians)            | `math.cos(0)` → `1.0`           |
+| `math.tan(x)`       | Tangent of x (in radians)           | `math.tan(math.pi / 4)` → `1.0` |
+| `math.pi`           | Mathematical constant π (≈ 3.14159) | `math.pi`                       |
+| `math.e`            | Mathematical constant e (≈ 2.71828) | `math.e`                        |
+
+---
+
+## ✅ 4️⃣ Example: Using the Math Module
+
+```python
+import math
+
+print("Square root of 25:", math.sqrt(25))          # 5.0
+print("Factorial of 5:", math.factorial(5))        # 120
+print("pi:", math.pi)                               # 3.141592653589793
+print("e:", math.e)                                 # 2.718281828459045
+print("Sine of 90 degrees:", math.sin(math.pi/2))  # 1.0
+print("Ceiling of 4.3:", math.ceil(4.3))           # 5
+print("Floor of 4.7:", math.floor(4.7))            # 4
+print("2 to the power of 3:", math.pow(2, 3))      # 8.0
+```
+
+---
+
+## ✅ 5️⃣ Example: Import Specific Function
+
+```python
+from math import sqrt, pi
+
+print("Square root of 49:", sqrt(49))  # 7.0
+print("Value of pi:", pi)             # 3.141592653589793
+```
+
+---
+
+## ✅ 6️⃣ Notes
+
+* Most math functions work with **float numbers**.
+* Angles in `sin`, `cos`, `tan` are in **radians** (use `math.radians(degrees)` to convert).
+
+👉 Example:
+
+```python
+import math
+angle_degrees = 90
+angle_radians = math.radians(angle_degrees)
+print(math.sin(angle_radians))   # Output: 1.0
+```
+
+---
+
+Would you like me to provide exercises that let you practice using different math functions in small projects or interactive examples?
