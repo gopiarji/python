@@ -1,0 +1,190 @@
+Here is a clear and detailed overview of **Data Types in Python**, from basic to advanced:
+
+---
+
+## ✅ What Is a Data Type?
+
+A **data type** defines the type of a value a variable holds in Python, such as numbers, text, lists, etc.
+Python is **dynamically typed**, meaning variables do not need explicit type declarations.
+
+---
+
+### ✅ 1️⃣ Numeric Data Types
+
+#### 🔹 Integer (`int`)
+
+Whole numbers (positive or negative)
+
+```python
+x = 10
+y = -5
+```
+
+#### 🔹 Floating Point (`float`)
+
+Decimal numbers
+
+```python
+pi = 3.14159
+temperature = -7.5
+```
+
+#### 🔹 Complex Numbers (`complex`)
+
+Numbers with real and imaginary parts
+
+```python
+z = 2 + 3j
+print(type(z))  # <class 'complex'>
+```
+
+---
+
+### ✅ 2️⃣ Text Type
+
+#### 🔹 String (`str`)
+
+Sequence of characters enclosed in quotes
+
+```python
+name = "Alice"
+greeting = 'Hello, world!'
+multi_line = """This is
+a multiline string."""
+```
+
+Useful methods:
+
+```python
+len(name)         # Length of string
+name.upper()      # Convert to uppercase
+name.lower()      # Convert to lowercase
+name.replace("A", "E")
+```
+
+---
+
+### ✅ 3️⃣ Boolean Type
+
+#### 🔹 Boolean (`bool`)
+
+Holds `True` or `False`
+
+```python
+is_active = True
+is_logged_in = False
+
+# Example in condition
+if is_active:
+    print("Active!")
+```
+
+---
+
+### ✅ 4️⃣ Sequence Types
+
+#### 🔹 List (`list`)
+
+Ordered, mutable sequence of elements
+
+```python
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")     # Add item
+fruits[0] = "grape"         # Modify element
+print(fruits)
+```
+
+#### 🔹 Tuple (`tuple`)
+
+Ordered, immutable sequence of elements
+
+```python
+point = (10, 20)
+# point[0] = 30  # ❌ Error! Tuple is immutable
+```
+
+#### 🔹 Range (`range`)
+
+Immutable sequence of numbers
+
+```python
+for i in range(5):
+    print(i)   # Prints 0 to 4
+```
+
+---
+
+### ✅ 5️⃣ Set Types
+
+#### 🔹 Set (`set`)
+
+Unordered, unique elements
+
+```python
+numbers = {1, 2, 3, 2, 1}
+print(numbers)  # Output: {1, 2, 3}
+
+numbers.add(4)
+numbers.remove(2)
+```
+
+#### 🔹 Frozenset (`frozenset`)
+
+Immutable set
+
+```python
+frozen = frozenset([1, 2, 3])
+# frozen.add(4)  # ❌ Error
+```
+
+---
+
+### ✅ 6️⃣ Mapping Type
+
+#### 🔹 Dictionary (`dict`)
+
+Key-value pairs (unordered prior to Python 3.7; ordered from 3.7+)
+
+```python
+person = {"name": "Alice", "age": 25}
+print(person["name"])   # Output: Alice
+person["age"] = 26      # Update value
+person["city"] = "NY"
+```
+
+---
+
+### ✅ 7️⃣ None Type
+
+#### 🔹 NoneType (`None`)
+
+Represents the absence of a value
+
+```python
+result = None
+
+if result is None:
+    print("No result found.")
+```
+
+---
+
+## ✅ Summary Table
+
+| Data Type | Example                               |
+| --------- | ------------------------------------- |
+| int       | `x = 10`                              |
+| float     | `pi = 3.14`                           |
+| complex   | `z = 1 + 2j`                          |
+| str       | `name = "Alice"`                      |
+| bool      | `flag = True`                         |
+| list      | `fruits = ["apple", "banana"]`        |
+| tuple     | `point = (10, 20)`                    |
+| set       | `unique = {1, 2, 3}`                  |
+| frozenset | `frozen = frozenset([1, 2])`          |
+| dict      | `person = {"name": "Bob", "age": 30}` |
+| NoneType  | `value = None`                        |
+
+---
+
+Would you like me to provide hands-on practice exercises with solutions for each data type?
