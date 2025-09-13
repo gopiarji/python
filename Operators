@@ -1,0 +1,170 @@
+Here is a detailed overview of **Operators in Python**, categorized by their types and use cases:
+
+---
+
+## ✅ 1️⃣ Arithmetic Operators
+
+Used for mathematical operations.
+
+| Operator | Description         | Example  | Result |
+| -------- | ------------------- | -------- | ------ |
+| `+`      | Addition            | `5 + 3`  | `8`    |
+| `-`      | Subtraction         | `5 - 3`  | `2`    |
+| `*`      | Multiplication      | `5 * 3`  | `15`   |
+| `/`      | Division (float)    | `5 / 2`  | `2.5`  |
+| `//`     | Floor Division      | `5 // 2` | `2`    |
+| `%`      | Modulus (remainder) | `5 % 2`  | `1`    |
+| `**`     | Exponentiation      | `5 ** 2` | `25`   |
+
+---
+
+## ✅ 2️⃣ Comparison Operators
+
+Used to compare two values.
+
+| Operator | Description      | Example  | Result  |
+| -------- | ---------------- | -------- | ------- |
+| `==`     | Equal            | `5 == 5` | `True`  |
+| `!=`     | Not equal        | `5 != 3` | `True`  |
+| `>`      | Greater than     | `5 > 3`  | `True`  |
+| `<`      | Less than        | `5 < 3`  | `False` |
+| `>=`     | Greater or equal | `5 >= 5` | `True`  |
+| `<=`     | Less or equal    | `5 <= 4` | `False` |
+
+---
+
+## ✅ 3️⃣ Logical Operators
+
+Used to combine Boolean expressions.
+
+| Operator | Description | Example          | Result  |
+| -------- | ----------- | ---------------- | ------- |
+| `and`    | Logical AND | `True and False` | `False` |
+| `or`     | Logical OR  | `True or False`  | `True`  |
+| `not`    | Logical NOT | `not True`       | `False` |
+
+👉 Example:
+
+```python
+x = 5
+print(x > 2 and x < 10)   # True
+print(x < 2 or x > 4)    # True
+print(not x == 5)        # False
+```
+
+---
+
+## ✅ 4️⃣ Assignment Operators
+
+Used to assign or modify variable values.
+
+| Operator | Description           | Example              |
+| -------- | --------------------- | -------------------- |
+| `=`      | Assign                | `x = 5`              |
+| `+=`     | Add & assign          | `x += 3` (x = x + 3) |
+| `-=`     | Subtract & assign     | `x -= 3`             |
+| `*=`     | Multiply & assign     | `x *= 3`             |
+| `/=`     | Divide & assign       | `x /= 3`             |
+| `//=`    | Floor divide & assign | `x //= 3`            |
+| `%=`     | Modulus & assign      | `x %= 3`             |
+| `**=`    | Exponentiate & assign | `x **= 3`            |
+
+---
+
+## ✅ 5️⃣ Bitwise Operators
+
+Operate on bits of integers.
+
+| Operator | Description       | Example         | Result |         |
+| -------- | ----------------- | --------------- | ------ | ------- |
+| `&`      | AND               | `5 & 3` → `1`   |        |         |
+| \`       | \`                | OR              | \`5    | 3`→`7\` |
+| `^`      | XOR               | `5 ^ 3` → `6`   |        |         |
+| `~`      | NOT (invert bits) | `~5` → `-6`     |        |         |
+| `<<`     | Left shift        | `5 << 1` → `10` |        |         |
+| `>>`     | Right shift       | `5 >> 1` → `2`  |        |         |
+
+👉 Example:
+
+```python
+a = 5  # 0b0101
+b = 3  # 0b0011
+print(a & b)  # Output: 1 (0b0001)
+```
+
+---
+
+## ✅ 6️⃣ Identity Operators
+
+Used to compare object identities.
+
+| Operator | Description                               | Example      |
+| -------- | ----------------------------------------- | ------------ |
+| `is`     | Checks if both refer to the same object   | `a is b`     |
+| `is not` | Checks if both refer to different objects | `a is not b` |
+
+👉 Example:
+
+```python
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+print(a is b)      # True (same object)
+print(a is c)      # False (different objects)
+```
+
+---
+
+## ✅ 7️⃣ Membership Operators
+
+Check membership in sequences.
+
+| Operator | Description    | Example                       |
+| -------- | -------------- | ----------------------------- |
+| `in`     | Check presence | `'a' in 'apple'` → `True`     |
+| `not in` | Check absence  | `'b' not in 'apple'` → `True` |
+
+👉 Example:
+
+```python
+fruits = ['apple', 'banana', 'cherry']
+print('apple' in fruits)      # True
+print('mango' not in fruits)  # True
+```
+
+---
+
+## ✅ Summary Example
+
+```python
+x = 10
+y = 3
+
+# Arithmetic
+print(x + y)    # 13
+print(x % y)    # 1
+
+# Comparison
+print(x > y)    # True
+
+# Logical
+print(x > 5 and y < 5)  # True
+
+# Assignment
+x += 2
+print(x)       # 12
+
+# Membership
+print(5 in [1,2,3,4,5])  # True
+
+# Identity
+a = [1, 2]
+b = a
+c = [1, 2]
+print(a is b)    # True
+print(a is c)    # False
+```
+
+---
+
+Would you like me to create interactive exercises or small projects demonstrating operator usage in Python?
